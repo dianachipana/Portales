@@ -1,0 +1,63 @@
+<div style="align-items: center;">
+    <mat-toolbar>
+        <mat-toolbar-row>
+            <img class="image-logo" src="assets/img/logo_portales.png" style="width: 150px;height: 55px;">
+        </mat-toolbar-row>
+        <mat-toolbar-row class="tollbardPrincipal">
+            <div class="row">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6">
+                    <h1 class="col-xs-12  col-sm-12  col-md-6 col-lg-12 col-xl-12">¡Bienvenida,Claudia!</h1>
+                    <span class="subtitulo col-xs-12 col-sm-12 col-md-6 col-lg-12 col-xl-12">Nuestro tipo de cambio preferencial
+                        <i class="icon-credit"></i>  Dolar
+                        <span class="precio">S/3.7865    <i class="arr-down"></i>  </span>
+                    </span>
+                </div>
+                <div class="col-xs-12 col-sm-12  col-md-12 col-lg-6 col-xl-6" style="text-align: left;">
+                    <div class="user-detail right">
+                        <div class="details">
+                            <span class="user-detail__username">
+                                Hola, soy Aldo
+                              </span>
+                            <span class="user-detail__role ">Tienes dudas? estoy para ayudarte</span>
+                        </div>
+
+                        <div class="user-detail__avatar-circle">
+                            <img mat-card-avatar class="mat-card-avatar" src="assets/img/persona.png" alt="User Avatar">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12  col-md-12 col-lg-6 col-xl-6">
+                    <div class="card_contend content-debit">
+                        <div class="card_info">
+                            <h2>Débito Automático</h2>
+                            <span class="subtitulo2">¡Afiliate gratis y olvídate de las fechas de pago</span>
+                        </div>
+                        <div style="float: right; margin-top: -50px;">
+                            <button mat-mini-fab color="primary" style="background-color: white;color: #7236c1;" aria-label="Example icon button with a menu icon">
+                                <mat-icon>arrow_right_alt</mat-icon>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12  col-md-12 col-lg-6 col-xl-6">
+                    <div class="card_contend content-consultas">
+                        <div class="card_info">
+                            <h3>Mis Consultas</h3>
+                            <span class="subtitulo2">¡Visualiza tus consultas y dudas!</span>
+                        </div>
+                        <div style="float: right; margin-top: -50px;">
+                            <button mat-mini-fab color="primary" style="background-color: white;color: #fab33c" aria-label="Example icon button with a menu icon">
+                                <mat-icon>arrow_right_alt</mat-icon>
+                              </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-toolbar-row>
+        <mat-toolbar-row class="last-row" style="padding-top: 40px;">
+            <div class="lsta-casas" style="padding-bottom: 40px;">
+                <app-lista-casas [listProperty]="listProperty"></app-lista-casas>
+            </div>
+        </mat-toolbar-row>
+    </mat-toolbar>
+</div>

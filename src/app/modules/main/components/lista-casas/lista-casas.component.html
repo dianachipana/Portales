@@ -1,0 +1,70 @@
+<div class="accordion_header">
+    <div class="row" style="align-items: center;padding: 0 20px;">
+        <div class="col-12 col-sm-8 col-md-8 col-lg-8 col-xl-8" style="text-align: left;">
+            <i class="icon-home"></i>
+            <div style="display: inline-block; padding: 0 10px; ">
+                <span class="title_header">PAGO DE LETRAS</span>
+                <p class="subtitle_header">Pague en partes tu futura casa</p>
+            </div>
+        </div>
+        <div class="col-12 col-sm-4 col-md-4 col-lg-4 col-xl-4 text-right">
+            <ng-container *ngIf="showContend">
+                <span class="accordion_action">Ver lotes</span>
+                <i class="icon-chevron-small-down" (click)="onClickOption()"></i>
+            </ng-container>
+
+
+            <ng-container *ngIf="!showContend">
+                <span class="accordion_action">Ocultar lotes</span>
+                <i class="icon-chevron-small-up" (click)="onClickOption()"></i>
+            </ng-container>
+
+        </div>
+    </div>
+    <ng-container *ngIf="!showContend">
+        <div class="row" style="margin-top: 35px;margin-right: 20px;" *ngFor="let data of listProperty">
+            <div class="col-3" style="border-left: 4px solid;border-left-color: #e9a629;">
+                <div class="contenedor">
+                    <img class="list_img_card col-3" src="assets/img/condominio1.jpg" />
+                    <div class="texto-encima">{{data.overdueLetter}}</div>
+                    <div class="centrado">Cód. Inmueble:<span style="font-weight: bold;color: white;">{{data.codProperty}}</span></div>
+                </div>
+            </div>
+            <div class="col-9">
+                <div style="text-align: left;padding: 0 20px;">
+                    <div style="display: inline-flex;">
+                        <span class="title_contend">{{data.name}}</span>
+                        <div class="verticalLine"><span style="font-weight: normal;">{{data.address}}</span> </div>
+                    </div>
+                    <div>
+                        <i class="icon-location-pin">
+              <span class="icon_text_location">{{data.location}}</span>
+            </i>
+                    </div>
+                    <div style="margin-left: 5px;">
+                        <span class="text_state">Estado:</span>
+                        <button [ngClass]="{btn_card_debt: data.codState ==='1',btn_card_paying: data.codState ==='2',btn_card_completed : data.codState ==='3'}">{{data.nameState}}</button>
+                    </div>
+                    <div style="margin-left: 5px;">
+                        <span class="text_letter">{{data.lyricsPaid}} letras pagadas de
+              100</span>
+                        <div class="progress">
+                            <div class="progress-bar" role="progressbar" style="border-radius: 15px;" [style.width]="data.lyricsPaid+'%'" [ngClass]="{background_debt: data.codState ==='1',background_paying: data.codState ==='2',background_completed : data.codState ==='3'}" aria-valuenow="25"
+                                aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <span style="color: #aeb0b1;font-weight: normal;font-size: 14px;">{{data.minAmount}}</span>
+                            </div>
+                            <div class="col-6" style="text-align: right;">
+                                <span style="color: #36393d;font-size: 14px;">de US$1000.00</span>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+
+</div>

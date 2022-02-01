@@ -1,0 +1,183 @@
+.toolbar {
+    padding: 10px;
+    height: 200px;
+    width: 100%;
+}
+
+h1 {
+    color: white;
+    margin-top: 30px;
+    padding-left: 15%;
+    font-size: xx-large;
+    vertical-align: top !important
+}
+
+h2 {
+    color: white;
+    font-size: x-large;
+    font-weight: 400;
+}
+
+.image-logo {
+    margin-left: 7.5%;
+}
+
+.subtitulo {
+    color: white;
+    padding-left: 15%;
+    font-size: medium;
+    font-weight: 100;
+}
+
+.subtitulo2 {
+    color: white;
+    font-size: small;
+    font-weight: 100;
+}
+
+.card_contend {
+    height: 95px;
+    border-radius: 15px 15px 5px 10px;
+    padding: 15px 15px 65px 15px;
+    color: white;
+}
+
+.content-debit {
+    background: #7236c1;
+    margin-top: 22px;
+    margin-left: 15%;
+}
+
+.lsta-casas {
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+}
+
+.tollbardPrincipal {
+    background-color: rgb(194, 0, 174);
+    height: 170px;
+    align-items: baseline !important;
+}
+
+.content-consultas {
+    background: rgb(246, 164, 26);
+    margin-left: 15px;
+    margin-top: 22px;
+    margin-right: 15%;
+}
+
+.icon-credit {
+    background-color: rgb(246, 164, 26);
+    color: white;
+    font-size: 24px;
+    border-radius: 50%;
+    vertical-align: middle;
+    margin: 0 10px;
+}
+
+.precio {
+    font-weight: 500;
+    align-items: flex-end !important;
+}
+
+.mat-card-avatar {
+    height: 50px;
+    width: 60px;
+    padding-left: 10px;
+    margin-top: 20px;
+    border-radius: 50%;
+    flex-shrink: 0;
+    align-items: flex-end;
+}
+
+.user-detail {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    padding-right: 15%;
+    align-items: center;
+    justify-content: end;
+}
+
+.user-detail {
+    display: flex;
+    flex-direction: row;
+    text-align: right;
+}
+
+.user-detail__role {
+    display: block;
+    font-style: normal;
+    line-height: 13px;
+    color: white;
+    font-weight: 200;
+    font-size: small;
+}
+
+.user-detail .details {
+    display: flex;
+    flex-direction: column;
+}
+
+.user-detail__username {
+    margin-top: 30px;
+    display: block;
+    float: left;
+    font-weight: 500;
+    color: white;
+    font-size: small;
+}
+
+.arr-down {
+    transform: rotate(45deg);
+    margin-left: 8px;
+    margin-bottom: 3px;
+}
+
+[class^=arr-] {
+    /* Arrows @RCB */
+    border: solid currentColor;
+    border-width: 0 .2em .2em 0;
+    display: inline-block;
+    padding: .20em;
+}
+
+.mat-toolbar-row,
+.mat-toolbar-single-row {
+    display: block !important;
+}
+
+@media (min-width: 0px) and (max-width: 990px) {
+    .tollbardPrincipal {
+        background-color: rgb(194, 0, 174);
+        height: 300px;
+        align-items: baseline !important;
+    }
+    h1 {
+        padding-left: 7.5%;
+    }
+    .image-logo {
+        margin-left: 7.5%;
+    }
+    .subtitulo {
+        padding-left: 7.5%;
+    }
+    .content-debit {
+        margin-left: 0px;
+    }
+    .content-consultas {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .user-detail__username {
+        padding-left: 7.5%;
+    }
+    .lsta-casas {
+        margin-top: 100px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .last-row {
+        margin-top: 100px;
+    }
+}
